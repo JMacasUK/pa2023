@@ -26,7 +26,7 @@
             if ($result->num_rows > 0) {
                 $rows = array();
                 while($row = mysqli_fetch_assoc($result)) {
-                    $rows[] = $row;
+                    $rows[] = $row["colonia"];
                 }
                 response(200, $rows);
             } else {
